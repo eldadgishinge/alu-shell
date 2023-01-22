@@ -1,1 +1,2 @@
-# alu-shell
+#!/bin/bash
+am back friends
