@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod 755 7-everybody
+chmod 640  7-everybody
