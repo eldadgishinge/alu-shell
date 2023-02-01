@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a.{a..z}.z}
+echo {a..z}{a..z}
