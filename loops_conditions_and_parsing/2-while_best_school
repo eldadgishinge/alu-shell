@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#yess
 num=0
 while [ $num -lt 10 ]; do
  echo "Best School"
