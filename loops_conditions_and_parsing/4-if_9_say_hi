@@ -1,11 +1,18 @@
 #!/usr/bin/env bash
 #say hi
-for (( i = 0; i < 10; i++ )); do
-  if [ $i -eq 9 ]; then
+i=1
+ while [  $i -le 10 ]; do
+	    if [ $i -eq 9 ]; then
 
-    echo "Hi"
-      
-  fi
-  echo "Best School"
+		         echo "Hi"
+			      else
+				             echo "Best School"
 
-done
+
+
+					        fi
+
+						   #echo "Best School"
+						      i=$((i+1))
+
+						       done
