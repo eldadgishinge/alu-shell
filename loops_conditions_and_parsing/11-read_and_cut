@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#  /etc/passwd
+while read -r READ
+do
+       echo "${READ}"
+done < /etc/passwd
