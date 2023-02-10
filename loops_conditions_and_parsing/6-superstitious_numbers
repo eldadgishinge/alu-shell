@@ -2,20 +2,20 @@
 #bad luck from China
 i=1
  while [  $i -le 20 ]; do
-   
-   if [ 5 -eq $i ]; then
-     echo "bad luck from China"
-     elif [ 10 -eq $i ]; then
-       echo "bad luck from Japan"
-       elif [ 18 -eq $i ]; then
-         echo "bad luck from Italy"
 
-         
-       
-   fi
-   
-   echo "$i"
-   i=$((i+1))
+	      case $i in
+		           5)
+				          echo "bad luck from China" ;;
+					       10)
+						              echo "bad luck from Japan" ;;
+							           18)
+									          echo "bad luck from Italy"
+										         esac
+
+											          
+
+											    echo "$i"
+											       i=$((i+1))
 
 
- done
+											        done
