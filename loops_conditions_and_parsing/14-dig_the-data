@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# IP and HTTP
+awk '{a[$1,$9]++} END {for (i in a) {split(i,b,SUBSEP); printf "%7d %s %s\n",a[i],b[1],b[2]}}' < apache-access.log | sort -nr
+
