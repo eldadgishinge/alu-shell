@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Bash script that displays To infinity and beyond indefinitely.
+
+for (( i = 10; i > 0; i++ )); do
+  sleep 2
+  echo "hello"
+
+done
