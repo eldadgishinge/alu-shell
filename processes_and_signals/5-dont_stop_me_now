@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 #KILL
 
-kill -9 398
+id=$(pgrep "bash ./4-to_infinity_and_beyond" -f)
+
+kill -15 "$id"
