@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#KILL
+
+kill -9 168
