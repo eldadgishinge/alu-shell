@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 #KILL
 
-file = /alu-shell/processes_and_signals/4-to_infinity_and_beyond
-trap "$file" 15
+pkill -15 "./4-to_infinity_and_beyond" -f
