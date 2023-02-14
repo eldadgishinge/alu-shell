@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#kill 7
+
+id=$(pgrep "./7-highlander" -f)
+
+kill -9 "$id"
