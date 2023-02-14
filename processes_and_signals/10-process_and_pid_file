@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#trail
+touch /var/run/myscript.pid
+trap "I hate the kill command" 0 15
+trap "Y U no love me?!" 0 2
+file=/var/run/myscript.pid
+trap "rm -f $file; exit" 0 3 15
+
+for (( i = 10; i > 0; i++ )); do                                                                                                                                      
+  echo "To infinity and beyond"                                                                                                   
+                                                                                                                                  
+done  
