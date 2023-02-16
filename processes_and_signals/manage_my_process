@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Processes
+for (( i = 10; i > 0; i++ )); do
+  sleep 1.5
+  echo "hey" >> /tmp/my_process
+
+done
+
