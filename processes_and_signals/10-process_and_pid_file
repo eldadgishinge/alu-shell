@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 #trail
-touch /var/run/myscript.pid
+terminator() {
+  rm /var/run/myscript.pid
+  exit
+}
 
+echo "$$" > /var/run/myscript.pid
 
-for (( i = 10; i > 0; i++ )); do
+while true
+do
   echo "To infinity and beyond"
-  trap "echo I hate the kill command; exit" 0 15
-  trap "echo Y U no love me?!" 0 2
-  file=/var/run/myscript.pid
-  trap "rm -f $file; exit" 0 3 15
-
+  sleep 2
+  trap 'echo "Y U no love me?!"' SIGINT
+  trap 'echo "I hate the kill command" && terminator' SIGTERM
+  trap 'terminator' SIGQUITgit
 done
